@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@mipmap/bg_top_sign_in_pwd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="50dp"
+                android:layout_height="0dip" />
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height_new"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请填写帐号"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:text="13952402217"
+                android:textColor="@color/light_black_6"
+                android:textColorHint="@color/light_black_6"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/light_gray_line" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dip"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_pwd" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="50dp"
+                android:layout_height="0dip" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height_new"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请填写密码"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:text="123456"
+                android:textColor="@color/light_black_6"
+                android:textColorHint="@color/light_black_6"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/light_gray_line" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dip"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/btn_sign_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height_new"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_primary_selector"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dip"
+            android:layout_height="20dp" />
+
+        <include layout="@layout/toolbar" />
+
+    </LinearLayout>
+</FrameLayout>

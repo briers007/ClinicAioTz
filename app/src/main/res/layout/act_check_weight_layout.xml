@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+        android:visibility="gone"/>
+
+    <include layout="@layout/ll_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重量"
+            android:textSize="25sp"
+            android:textColor="@color/light_black_3" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="#eeeeee"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_view_weight"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="0.0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Kg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_get_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="14dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingTop="14dp"
+            android:textSize="25sp"
+            android:text="获取"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:textSize="25sp"
+        android:gravity="right"
+        android:text="* 医疗垃圾放置称上，自动获取重量"
+        android:textColor="#ffff0000"/>
+
+    <TextView
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_new"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_primary_selector"
+        android:gravity="center"
+        android:text="提 交"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/btn_print"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_new"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_primary_selector"
+        android:gravity="center"
+        android:text="打 印"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/btn_zero"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_new"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_primary_selector"
+        android:gravity="center"
+        android:text="置 零"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="（需保持称台为空）"
+        android:textColor="#ffff0000"/>
+</LinearLayout>

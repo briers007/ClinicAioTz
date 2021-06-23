@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+        android:visibility="gone"/>
+
+    <include layout="@layout/ll_toolbar" />
+
+    <com.minorfish.clinicwaste.module.bagin.RvBagIn
+        android:id="@+id/rv_bag_in"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/btn_add_bag"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_add_bag"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_add_waste"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_primary_selector"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="添加垃圾"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/btn_commit"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_primary_selector"
+            android:gravity="center"
+            android:text="提交"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+</LinearLayout>

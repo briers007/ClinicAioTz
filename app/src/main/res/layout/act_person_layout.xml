@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+        android:visibility="gone"/>
+    <include layout="@layout/ll_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_waste"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="名称:       "
+            android:textSize="25sp"
+            android:textColor="@color/light_black_6" />
+
+        <TextView
+            android:id="@+id/agency_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="集中回收站"
+            android:textSize="25sp"
+            android:textColor="@color/light_black_3" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_address"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="地址:       "
+            android:textSize="25sp"
+            android:textColor="@color/light_black_6" />
+
+        <TextView
+            android:id="@+id/agency_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="苏州市姑苏区山塘街"
+            android:textSize="25sp"
+            android:textColor="@color/light_black_3" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_operator"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="操作员:   "
+            android:textSize="25sp"
+            android:textColor="@color/light_black_6" />
+
+        <TextView
+            android:id="@+id/operator_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textSize="25sp"
+            android:textColor="@color/light_black_3" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_modify_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_list_item_selector"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="修改密码"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone"
+        android:textSize="30sp"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="black90">#191919</color>
+    <color name="black80">#333333</color>
+    <color name="black70">#4d4d4d</color>
+    <color name="red">#ff0000</color>
+    <color name="white_light">#dfdfdf</color>
+    <color name="deep_text_color">#347BB8</color>
+    <color name="colorPrimary">#25d3ff</color>
+    <color name="colorPrimaryDark">#25d3ff</color>
+    <color name="colorAccent">#25d3ff</color>
+    <color name="toolbar_bg_color">#25d3ff</color>
+    <color name="toolbar_menu_color">#FFFFFF</color>
+    <color name="toolbar_title_color">#FFFFFF</color>
+
+    <color name="white">#ffffff</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_333333">#333333</color>
+
+    <color name="color_home_module">#59caff</color>
+    <color name="color_blue">#47A0E0</color>
+    <color name="color_add4f3">#add4f3</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_aeaeae">#aeaeae</color>
+    <color name="color_6a6a6a">#6a6a6a</color>
+    <color name="color_f7f7f7">#f6f6f6</color>
+    <color name="color_F0F0F0">#F0F0F0</color>
+    <color name="color_ff5e51">#ff5e51</color>
+    <color name="color_ff4d30">#ff4d30</color>
+    <color name="color_e3e3e3">#e3e3e3</color>
+    <color name="color_b5b5b5">#b5b5b5</color>
+    <color name="color_ff2020">#ff2020</color>
+    <color name="color_59caff">#59caff</color>
+    <color name="color_19bd98">#19bd98</color>
+    <color name="color_3d94e1">#3d94e1</color>
+    <color name="color_f39b13">#f39b13</color>
+    <color name="color_bf6dc0">#bf6dc0</color>
+    <color name="color_black">#000000</color>
+</resources>

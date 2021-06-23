@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <include layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:height="100dp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="34sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btJz02"
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:textSize="26sp"
+                android:textColor="@color/color_bg_selector"
+                android:background="@drawable/bg_btn_selector"
+                android:text="开始校准\n(.02)"/>
+
+            <Button
+                android:id="@+id/btJz05"
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:textSize="26sp"
+                android:textColor="@color/color_bg_selector"
+                android:background="@drawable/bg_btn_selector"
+                android:text="开始校准\n(.05)"/>
+
+            <Button
+                android:id="@+id/btJz1"
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:textSize="26sp"
+                android:textColor="@color/color_bg_selector"
+                android:background="@drawable/bg_btn_selector"
+                android:visibility="gone"
+                android:text="开始校准\n(.1)"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btFm"
+            android:layout_width="300dp"
+            android:layout_height="260dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/color_bg_selector"
+            android:textSize="26sp"
+            android:background="@drawable/bg_btn_selector"
+            android:text="校准砝码\n(25kg)"/>
+
+    </LinearLayout>
+</LinearLayout>

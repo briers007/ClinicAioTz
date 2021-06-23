@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+        android:visibility="gone"/>
+
+    <include layout="@layout/ll_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_scan_bag" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:textSize="30sp"
+                android:text="请扫描垃圾袋二维码" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_scan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="bottom"
+            android:textColor="@android:color/transparent" />
+
+        <!--android:text="http://t.minorfish11.com/u.do?p=1&amp;c=54b3b31Hbbbb3bbb35dddd5ddd5776qo"
+          android:text="http://t.minorfish11.com/u.do?p=1&amp;c=54b3b31Hbbbb3bbb47dddd5ddd69AEyM"-->
+    </FrameLayout>
+</LinearLayout>

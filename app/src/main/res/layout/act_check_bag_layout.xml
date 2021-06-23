@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+        android:visibility="gone"/>
+
+    <include layout="@layout/ll_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="诊所名称      "
+                android:textSize="25sp"
+                android:textColor="@color/light_black_6" />
+
+            <TextView
+                android:id="@+id/tv_agency_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/light_black_3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="创建时间      "
+                android:textSize="25sp"
+                android:textColor="@color/light_black_6" />
+
+            <TextView
+                android:id="@+id/tv_weight_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/light_black_3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="批       次      "
+                android:textSize="25sp"
+                android:textColor="@color/light_black_6" />
+
+            <TextView
+                android:id="@+id/tv_batch_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/light_black_3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="垃圾类型      "
+                android:textSize="25sp"
+                android:textColor="@color/light_black_6" />
+
+            <TextView
+                android:id="@+id/tv_trah_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/light_black_3" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/btn_no"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/btn_height_new"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_negative_selector"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:text="不符合" />
+
+        <TextView
+            android:id="@+id/btn_yes"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/btn_height_new"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_primary_selector"
+            android:gravity="center"
+            android:text="符合"
+            android:textSize="30sp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
